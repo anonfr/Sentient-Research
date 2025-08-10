@@ -1,7 +1,7 @@
 import os
-from flask import Flask
+import subprocess
 import threading
-from src.agent import main
+from flask import Flask
 
 app = Flask(__name__)
 
@@ -13,9 +13,13 @@ def health_check():
 def status():
     return {"status": "online", "service": "Discord Research Agent"}
 
+def run_discord_bot():
+    """Run the Discord bot using subprocess"""
+    subprocess.run(["python", "-m", "src.agent"])
+
 if __name__ == "__main__":
     # Start the Discord bot in a separate thread
-    bot_thread = threading.Thread(target=main.main)
+    bot_thread = threading.Thread(target=run_discord_bot)
     bot_thread.daemon = True
     bot_thread.start()
     
