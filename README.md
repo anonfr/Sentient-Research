@@ -1,112 +1,95 @@
 # 🤖 Sentient Discord Research Agent
 
-**AI-powered Discord bot with advanced research capabilities built for the Sentient Builder Program.**
+**Transform your Discord server into an AI-powered research hub!**
 
-## ✨ Features
-- 🔍 **Deep Research** - Comprehensive analysis on any topic
-- 📊 **Data Analysis** - Advanced insights and recommendations  
-- 📋 **Professional Reports** - Business-ready documentation
-- 📝 **Smart Summarization** - Intelligent content condensation
-- 🧠 **Conversation Memory** - Context-aware interactions
+## 🚀 **Try It Now - Add Our Bot to Your Server!**
 
-## 🚀 Quick Start
+<div align="center">
 
-### Prerequisites
-- Python 3.9+
-- Discord Developer Account
-- Fireworks AI API Key
+### **[🤖 INVITE BOT TO YOUR SERVER](https://discord.com/oauth2/authorize?client_id=1403894961048387604&permissions=2147682368&integration_type=0&scope=bot+applications.commands)**
 
-### Setup
-```bash
-git clone https://github.com/anonfr/Sentient-Research.git
-cd Sentient-Research
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-cp .env.example .env
-# Edit .env with your API keys
-python -m src.agent
-```
+*Ready to use instantly - no setup required!*
 
-### Environment Variables
-```env
-MODEL_API_KEY=your_fireworks_api_key
-DISCORD_TOKEN=your_discord_bot_token
-```
-
-## 🎯 Commands
-- `!research [topic]` - Deep research on any subject
-- `!analyze [subject]` - Data analysis with insights
-- `!report [topic]` - Generate comprehensive reports
-- `!summarize [text]` - Intelligent summarization
-- `!help` - Show all commands
-
-## 🌐 24/7 Deployment
-
-### Deploy on Render (Free)
-1. Fork this repo
-2. Sign up at [Render.com](https://render.com)
-3. Create new web service from your GitHub repo
-4. Add environment variables in Render dashboard
-5. Deploy - your bot runs 24/7!
-
-## 🔧 Discord Bot Setup
-1. Go to [Discord Developer Portal](https://discord.com/developers/applications)
-2. Create new application and bot
-3. Copy bot token to `.env`
-4. Enable privileged intents:
-   - ✅ Message Content Intent
-   - ✅ Server Members Intent
-   - ✅ Presence Intent
-5. Invite bot with permissions:
-   - ✅ View Channels
-   - ✅ Send Messages
-   - ✅ Read Messages
-   - ✅ Read Message History
-
-## 🏆 Built for Sentient Builder Program
-High-value research agent demonstrating:
-- ✅ Advanced AI integration
-- ✅ Production-ready architecture
-- ✅ Real-world utility
-- ✅ Professional quality
-
-## 📊 Example Usage
-```
-User: !research blockchain technology 2024
-Bot: 📊 Research Report: blockchain technology 2024
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-     
-     🔍 Key Findings:
-     • Enterprise adoption increasing 40% year-over-year
-     • Major focus on sustainability and energy efficiency
-     • Integration with AI and IoT technologies expanding
-     
-     📈 Current Trends:
-     • Central Bank Digital Currencies (CBDCs) development
-     • DeFi protocols maturing with better security
-     • NFT utility expanding beyond digital art
-     
-     🚀 Future Implications:
-     • Supply chain transparency becoming standard
-     • Smart contracts automating complex agreements
-     • Cross-chain interoperability solving fragmentation
-```
-
-## 🛠️ Customization
-Edit `src/agent/agent_tools/discord/discord_config.py` to modify bot behavior.
-
-## 📄 License
-MIT License - see LICENSE file for details.
-
-## 🤝 Contributing
-1. Fork the repository
-2. Create feature branch
-3. Make changes
-4. Submit pull request
+</div>
 
 ---
 
-**⭐ Star this repo if you find it useful!**
+## ✨ **What Can It Do?**
+- 🔍 **Deep Research** - Get comprehensive analysis on any topic
+- 📊 **Data Analysis** - Receive insights with actionable recommendations  
+- 📋 **Professional Reports** - Generate business-ready documentation
+- 📝 **Smart Summarization** - Condense content intelligently
+- 🧠 **Conversation Memory** - Maintains context across discussions
 
-Built with ❤️ for the AI community
+## 🎯 **Commands**
+| Command | What It Does | Example |
+|---------|-------------|---------|
+| `!research [topic]` | Deep research with analysis | `!research AI trends 2024` |
+| `!analyze [subject]` | Data insights & recommendations | `!analyze Tesla stock` |
+| `!report [topic]` | Professional comprehensive reports | `!report crypto market` |
+| `!summarize [text]` | Smart content summarization | `!summarize` (recent chat) |
+| `!help` | Show all commands | `!help` |
+
+## 🛠️ **Want Your Own Bot?**
+
+### **Option 1: Deploy on Render (Free & Easy)**
+1. **Fork this repo** → **Sign up at [Render.com](https://render.com)**
+2. **Create Web Service** → **Connect your GitHub repo**
+3. **Add Environment Variables**: `MODEL_API_KEY` + `DISCORD_TOKEN`
+4. **Set Start Command**: `python web_server.py`
+5. **Deploy** → Your bot runs 24/7!
+
+### **Option 2: Run Locally**
+```bash
+git clone https://github.com/anonfr/Sentient-Research.git
+cd Sentient-Research && python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt && cp .env.example .env
+# Add your API keys to .env, then:
+python -m src.agent
+```
+
+## 🔑 **Need API Keys?**
+
+**For Fireworks AI:**
+1. Visit [Fireworks.ai](https://fireworks.ai) → Sign up → Get API key
+2. Add to `.env` as `MODEL_API_KEY=your_key_here`
+
+**For Discord Bot:**
+1. [Discord Developer Portal](https://discord.com/developers/applications) → New Application → Bot
+2. Copy Bot Token → Add to `.env` as `DISCORD_TOKEN=your_token_here`
+3. Enable: **Message Content Intent**, **Server Members Intent**, **Presence Intent**
+
+## 💡 **See It In Action**
+```
+User: !research quantum computing 2024
+Bot: 🔍 Research Report: quantum computing 2024
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     
+     📊 Key Findings:
+     • IBM achieves 1000+ qubit milestone with error correction
+     • Google's quantum advantage in optimization problems confirmed
+     • $2.4B invested globally, 40% increase from 2023
+     
+     🚀 Future Impact:
+     • Drug discovery timelines reduced from years to months
+     • Cryptography revolution expected by 2030
+     • Financial modeling accuracy improvements of 300%
+     
+     💡 Recommendations:
+     • Monitor IBM and Google partnerships closely
+     • Consider quantum-safe encryption migration plans
+     • Explore quantum cloud services for R&D
+```
+
+## 🏆 **Built for Sentient Builder Program**
+*High-value AI agent showcasing production-ready research capabilities*
+
+---
+
+<div align="center">
+
+**⭐ [Star this repo](https://github.com/anonfr/Sentient-Research) • 🤖 [Add to Discord](https://discord.com/oauth2/authorize?client_id=1403894961048387604&permissions=2147682368&integration_type=0&scope=bot+applications.commands) • 🚀 [Deploy on Render](https://render.com)**
+
+*Built with ❤️ for the AI community*
+
+</div>
