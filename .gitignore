@@ -178,3 +178,8 @@ cython_debug/
 
 # Agent state
 state/
+
+# Personal files - do not upload
+plan.md
+*.log
+sentient_bot.log
