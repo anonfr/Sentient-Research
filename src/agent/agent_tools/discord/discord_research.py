@@ -50,13 +50,24 @@ class DiscordResearchAgent(discord.Client):
         )
 
     async def on_message(self, message):
-        # Simple but effective bot filtering
+        # Multiple layers of bot filtering to prevent any duplicates
         if message.author.bot:  # This catches ALL bots including ourselves
             return
         if message.author == self.user:  # Extra safety
             return
+        if hasattr(message.author, 'id') and message.author.id == self.user.id:  # Triple safety
+            return
+        if message.id in self.processed_messages:  # Already processed this exact message
+            return
             
-        logging.info(f"[DISCORD-RESEARCH] Message from {message.author.name}: {message.content}")
+        # Track this message to prevent reprocessing
+        self.processed_messages.add(message.id)
+        if len(self.processed_messages) > 1000:  # Keep memory usage reasonable
+            old_messages = list(self.processed_messages)[:500]
+            for old_id in old_messages:
+                self.processed_messages.discard(old_id)
+            
+        logging.info(f"[DISCORD-RESEARCH] Processing message from {message.author.name}: {message.content}")
         
         # Store conversation history
         channel_id = str(message.channel.id)
