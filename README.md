@@ -8,6 +8,13 @@
 
 ### **[🤖 INVITE BOT TO YOUR SERVER](https://discord.com/oauth2/authorize?client_id=1403894961048387604&permissions=2147682368&integration_type=0&scope=bot+applications.commands)**
 
+
+
+![Uploading image.png…]()
+
+
+
+
 *Ready to use instantly - no setup required!*
 
 </div>
