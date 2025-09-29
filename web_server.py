@@ -18,7 +18,7 @@ def run_discord_bot():
     subprocess.run(["python", "-m", "src.agent"])
 
 if __name__ == "__main__":
-    # Start the Discord bot in a separate thread
+    # Start the Discord bot in a separate thread as given
     bot_thread = threading.Thread(target=run_discord_bot)
     bot_thread.daemon = True
     bot_thread.start()
